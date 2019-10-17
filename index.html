@@ -224,7 +224,7 @@
                 
               
 
-              <time title="Created: 2019-10-17 15:15:27 / Modified: 15:16:24" itemprop="dateCreated datePublished" datetime="2019-10-17T15:15:27+08:00">2019-10-17</time>
+              <time title="Created: 2019-10-17 15:15:27 / Modified: 15:19:14" itemprop="dateCreated datePublished" datetime="2019-10-17T15:15:27+08:00">2019-10-17</time>
             </span>
           
             
@@ -243,36 +243,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Hexo-Next主题快速集成快评"><a href="#Hexo-Next主题快速集成快评" class="headerlink" title="Hexo Next主题快速集成快评"></a>Hexo Next主题快速集成快评</h1><h3 id="快评是什么"><a href="#快评是什么" class="headerlink" title="快评是什么"></a>快评是什么</h3><p>快评是由<a href="https://yhdm360.com/" target="_blank" rel="noopener">深圳市一行代码科技有限公司</a>开发的一款社会化的评论系统，快评使用Markdown编辑器进行评论回复。目前，支持使用微信或手机号进行登录。</p>
-<h3 id="集成步骤"><a href="#集成步骤" class="headerlink" title="集成步骤"></a>集成步骤</h3><h5 id="1-注册并登录快评官网"><a href="#1-注册并登录快评官网" class="headerlink" title="1. 注册并登录快评官网"></a>1. 注册并登录快评官网</h5><p>官网地址：<a href="https://kuaiping.yhdm360.com/" target="_blank" rel="noopener">https://kuaiping.yhdm360.com/</a></p>
+          <h1 id="Hexo-github-为你的博客增加评论系统"><a href="#Hexo-github-为你的博客增加评论系统" class="headerlink" title="Hexo + github 为你的博客增加评论系统"></a>Hexo + github 为你的博客增加评论系统</h1><h1 id="Hexo-Next主题快速集成快评"><a href="#Hexo-Next主题快速集成快评" class="headerlink" title="Hexo Next主题快速集成快评"></a>Hexo Next主题快速集成快评</h1><h3 id="快评是什么"><a href="#快评是什么" class="headerlink" title="快评是什么"></a>快评是什么</h3><p>快评是由<a href="https://yhdm360.com/" target="_blank" rel="noopener">深圳市一行代码科技有限公司</a>开发的一款社会化的评论系统，快评使用Markdown编辑器进行评论回复。目前，支持使用微信或手机号进行登录。</p>
+<h3 id="集成步骤"><a href="#集成步骤" class="headerlink" title="集成步骤"></a>集成步骤</h3><h5 id="1-注册并登录快评官网"><a href="#1-注册并登录快评官网" class="headerlink" title="1. 注册并登录快评官网"></a>1. 注册并登录快评官网</h5><p>官网地址：<a href="https://kuaiping.yhdm360.com/" target="_blank" rel="noopener">kuaiping.yhdm360.com/</a></p>
 <p>点击右上方登录按钮，使用手机号加验证码的方式登录。首次登录后会看到<strong>申请免费使用</strong>的按钮，点击申请免费使用，填入申请域名，域名校验通过后你将看到类似下面的页面：</p>
-<p><a href="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c5f82175?w=3356&h=1344&f=png&s=256035" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c5f82175?w=3356&h=1344&f=png&s=256035" alt="在这里插入图片描述"></a></p>
-<p>点击下方按钮显示接入方法，你将看到类似下图页面：<br><a href="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c65f8209?w=2746&h=1282&f=png&s=319195" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c65f8209?w=2746&h=1282&f=png&s=319195" alt="在这里插入图片描述"></a></p>
-<p>点击红色箭头所指向的按钮，复制生成的app id (配置的时候需要复制app id)。 </p>
-<h5 id="2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来"><a href="#2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来" class="headerlink" title="2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来"></a>2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来</h5><p><code>$ cd hexo</code></p>
-<p><code>$ git clone https://github.com/theme-next/hexo-theme-next</code></p>
-<p>我们还可以自己修改下这个文件夹名字, 这里我把它改为了next</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf19690616fee?w=926&h=353&f=png&s=22094" alt></p>
-<p> <code>$ mv hexo-theme-next/ next</code></p>
-<h5 id="3-再clone我们的主题包到本地"><a href="#3-再clone我们的主题包到本地" class="headerlink" title="3. 再clone我们的主题包到本地"></a>3. 再clone我们的主题包到本地</h5><p><code>$ git clone https://github.com/yuanhoujun/kuaiping-adapter.git</code></p>
-<p>打开这个kuaiping-adapter文件, 找到以下两个文件</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf19a22e94a18?w=1125&h=884&f=png&s=73686" alt></p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf19cbee50904?w=1125&h=884&f=png&s=74409" alt></p>
-<p>然后, 把它们分别复制到图中themes文件的相应的路径中</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf1a0ce435b5d?w=1125&h=884&f=png&s=116347" alt></p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf259dd38e9e8?w=1125&h=884&f=png&s=96860" alt></p>
-<h5 id="4-打开themes-next-config-yml"><a href="#4-打开themes-next-config-yml" class="headerlink" title="4. 打开themes/next/_config.yml"></a>4. 打开themes/next/_config.yml</h5><p>把这段代码添加进去</p>
-<figure class="highlight plain"><figcaption><span>Kuaiping</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kuaiping:</span><br><span class="line">  enable: true</span><br><span class="line">  appid: xxxxxxx</span><br></pre></td></tr></table></figure>
+<p><a href="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c5f82175?w=3356&h=1344&f=png&s=256035" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c5f82175?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="在这里插入图片描述"></a></p>
+<p>点击下方按钮显示接入方法，你将看到类似下图页面：</p>
+<p><a href="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c65f8209?w=2746&h=1282&f=png&s=319195" target="_blank" rel="noopener"><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbeed0c65f8209?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="在这里插入图片描述"></a></p>
+<p>点击红色箭头所指向的按钮，复制生成的app id (配置的时候需要复制app id)。</p>
+<h5 id="2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来"><a href="#2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来" class="headerlink" title="2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来"></a>2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next</span><br></pre></td></tr></table></figure>
 
-<h5 id="备注：appid需要到快评官网申请。"><a href="#备注：appid需要到快评官网申请。" class="headerlink" title="备注：appid需要到快评官网申请。"></a>备注：appid需要到<a href="https://kuaiping.yhdm360.com" target="_blank" rel="noopener">快评官网</a>申请。</h5><p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf1f6a66e2301?w=1920&h=1030&f=png&s=80204" alt></p>
-<h5 id="5-然后重新启动服务"><a href="#5-然后重新启动服务" class="headerlink" title="5.然后重新启动服务"></a>5.然后重新启动服务</h5><p><code>$ hexo s</code></p>
+<p>我们还可以自己修改下这个文件夹名字, 这里我把它改为了next</p>
+<p>![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="926" height="353"/>)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv hexo-theme-next/ next</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-再clone我们的主题包到本地"><a href="#3-再clone我们的主题包到本地" class="headerlink" title="3. 再clone我们的主题包到本地"></a>3. 再clone我们的主题包到本地</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/yuanhoujun/kuaiping-adapter.git</span><br></pre></td></tr></table></figure>
+
+<p>打开这个kuaiping-adapter文件, 找到以下两个文件</p>
+<p>![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1125" height="884"/>)</p>
+<p>![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1125" height="884"/>)</p>
+<p>然后, 把它们分别复制到图中themes文件的相应的路径中</p>
+<p>![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1125" height="884"/>)</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf259dd38e9e8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<h5 id="4-打开themes-next-config-yml"><a href="#4-打开themes-next-config-yml" class="headerlink" title="4. 打开themes/next/_config.yml"></a>4. 打开themes/next/_config.yml</h5><p>把这段代码添加进去</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">kuaiping:</span><br><span class="line">  enable: true</span><br><span class="line">  appid: xxxxxxx</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<h5 id="备注：appid需要到快评官网申请。"><a href="#备注：appid需要到快评官网申请。" class="headerlink" title="备注：appid需要到快评官网申请。"></a>备注：appid需要到<a href="https://kuaiping.yhdm360.com/" target="_blank" rel="noopener">快评官网</a>申请。</h5><p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf1f6a66e2301?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<h5 id="5-然后重新启动服务"><a href="#5-然后重新启动服务" class="headerlink" title="5.然后重新启动服务"></a>5.然后重新启动服务</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
 <p>这样就可以在本地看到集成后的主题效果了, 最后就可以发布到线上环境啦</p>
-<p><code>$ hexo g -d</code></p>
-<p>这个快评的优点就是用户在评论区中和你进行交流, 你可以实时得到反馈, 大大的增加了互动性.  当然, 你也可以管理这些评论来防止其他因素造成的不良言论.</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf1f32ff268ef?w=1916&h=994&f=png&s=68790" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>这个快评的优点就是用户在评论区中和你进行交流, 你可以实时得到反馈, 大大的增加了互动性. 当然, 你也可以管理这些评论来防止其他因素造成的不良言论.</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf1f32ff268ef?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
 <p>如果在这过程中您还有其他问题, 请扫描下方二维码, 我们可以互相交流, 我们的官方群中也有很多热心并技术好的小哥哥小姐姐帮助你解决疑惑. 还等什么, 赶快扫码加入吧!</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf2c69d4258d7?w=540&h=740&f=jpeg&s=61975" alt></p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf48c2fe13b63?w=300&h=300&f=png&s=8480" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf2c69d4258d7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/10/12/16dbf48c2fe13b63?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
 
         
       
