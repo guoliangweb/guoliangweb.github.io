@@ -320,33 +320,33 @@
 <h3 id="快评是什么"><a href="#快评是什么" class="headerlink" title="快评是什么"></a>快评是什么</h3><p>快评是由<a href="https://yhdm360.com/" target="_blank" rel="noopener">深圳市一行代码科技有限公司</a>开发的一款社会化的评论系统，快评使用Markdown编辑器进行评论回复。目前，支持使用微信或手机号进行登录。</p>
 <h3 id="集成步骤"><a href="#集成步骤" class="headerlink" title="集成步骤"></a>集成步骤</h3><h5 id="1-注册并登录快评官网"><a href="#1-注册并登录快评官网" class="headerlink" title="1. 注册并登录快评官网"></a>1. 注册并登录快评官网</h5><p>官网地址：<a href="https://kuaiping.yhdm360.com/" target="_blank" rel="noopener">https://kuaiping.yhdm360.com/</a></p>
 <p>点击右上方登录按钮，使用手机号加验证码的方式登录。首次登录后会看到<strong>申请免费使用</strong>的按钮，点击申请免费使用，填入申请域名，域名校验通过后你将看到类似下面的页面：</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C1.jpg" alt="1"></p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C2.jpg" alt="2"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C1.jpg" alt="1"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C2.jpg" alt="2"></p>
 <p>点击红色箭头所指向的按钮，复制生成的app id (配置的时候需要复制app id)。 </p>
 <h5 id="2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来"><a href="#2-先cd到你自己博客的文件目录下-然后把Hexo官方的主题包clone下来" class="headerlink" title="2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来"></a>2. 先cd到你自己博客的文件目录下, 然后把Hexo官方的主题包clone下来</h5><p><code>$ cd hexo</code></p>
 <p><code>$ git clone https://github.com/theme-next/hexo-theme-next</code></p>
 <p>我们还可以自己修改下这个文件夹名字, 这里我把它改为了next</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C3.jpg" alt="3"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C3.jpg" alt="3"></p>
 <p> <code>$ mv hexo-theme-next/ next</code></p>
 <h5 id="3-再clone我们的主题包到本地"><a href="#3-再clone我们的主题包到本地" class="headerlink" title="3. 再clone我们的主题包到本地"></a>3. 再clone我们的主题包到本地</h5><p><code>$ git clone https://github.com/yuanhoujun/kuaiping-adapter.git</code></p>
 <p>打开这个kuaiping-adapter文件, 找到以下两个文件</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C4.jpg" alt="4"></p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C5.jpg" alt="5"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C4.jpg" alt="4"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C5.jpg" alt="5"></p>
 <p>然后, 把它们分别复制到图中themes文件的相应的路径中</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C6.jpg" alt="6"></p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C7.jpg" alt="7"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C6.jpg" alt="6"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C7.jpg" alt="7"></p>
 <h5 id="4-打开themes-next-config-yml"><a href="#4-打开themes-next-config-yml" class="headerlink" title="4. 打开themes/next/_config.yml"></a>4. 打开themes/next/_config.yml</h5><p>把这段代码添加进去</p>
 <figure class="highlight plain"><figcaption><span>Kuaiping</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">kuaiping:</span><br><span class="line">  enable: true</span><br><span class="line">  appid: xxxxxxx</span><br></pre></td></tr></table></figure>
 
-<h5 id="备注：appid需要到快评官网申请。"><a href="#备注：appid需要到快评官网申请。" class="headerlink" title="备注：appid需要到快评官网申请。"></a>备注：appid需要到<a href="https://kuaiping.yhdm360.com" target="_blank" rel="noopener">快评官网</a>申请。</h5><p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C8.jpg" alt="8"></p>
+<h5 id="备注：appid需要到快评官网申请。"><a href="#备注：appid需要到快评官网申请。" class="headerlink" title="备注：appid需要到快评官网申请。"></a>备注：appid需要到<a href="https://kuaiping.yhdm360.com" target="_blank" rel="noopener">快评官网</a>申请。</h5><p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C8.jpg" alt="8"></p>
 <h5 id="5-然后重新启动服务"><a href="#5-然后重新启动服务" class="headerlink" title="5.然后重新启动服务"></a>5.然后重新启动服务</h5><p><code>$ hexo s</code></p>
 <p>这样就可以在本地看到集成后的主题效果了, 最后就可以发布到线上环境啦</p>
 <p><code>$ hexo g -d</code></p>
 <p>这个快评的优点就是用户在评论区中和你进行交流, 你可以实时得到反馈, 大大的增加了互动性.  当然, 你也可以管理这些评论来防止其他因素造成的不良言论.</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C9.jpg" alt="9"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C9.jpg" alt="9"></p>
 <p>如果在这过程中您还有其他问题, 请扫描下方二维码, 我们可以互相交流, 我们的官方群中也有很多热心并技术好的小哥哥小姐姐帮助你解决疑惑. 还等什么, 赶快扫码加入吧!</p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C9.jpg" alt="9"></p>
-<p><img src="C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C10.jpg" alt="10"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C9.jpg" alt="9"></p>
+<p><img src="/2019/10/17/Next主题快速集成快评/C:%5CUsers%5C%E9%83%AD%E6%A2%81%5CDesktop%5Chexo%5Csource_posts%5CNext%E4%B8%BB%E9%A2%98%E5%BF%AB%E9%80%9F%E9%9B%86%E6%88%90%E5%BF%AB%E8%AF%84%5C10.jpg" alt="10"></p>
 
         
       
@@ -399,7 +399,7 @@
                 
               
 
-              <time title="Created: 2019-10-17 14:25:51 / Modified: 17:18:54" itemprop="dateCreated datePublished" datetime="2019-10-17T14:25:51+08:00">2019-10-17</time>
+              <time title="Created: 2019-10-17 14:25:51 / Modified: 18:17:38" itemprop="dateCreated datePublished" datetime="2019-10-17T14:25:51+08:00">2019-10-17</time>
             </span>
           
             
@@ -462,8 +462,8 @@
 <p>以下是我搭建的博客你们可以去这里感受下效果 </p>
 <h5 id="博客地址-https-guoliangweb-github-io"><a href="#博客地址-https-guoliangweb-github-io" class="headerlink" title="博客地址:  https://guoliangweb.github.io/"></a>博客地址:  <a href="https://guoliangweb.github.io/" target="_blank" rel="noopener">https://guoliangweb.github.io/</a></h5><p>如果想来体验的小伙伴可以官网来试用一下 </p>
 <h5 id="官网地址：kuaiping-yhdm360-com"><a href="#官网地址：kuaiping-yhdm360-com" class="headerlink" title="官网地址：kuaiping.yhdm360.com/"></a>官网地址：<a href="https://kuaiping.yhdm360.com/" target="_blank" rel="noopener">kuaiping.yhdm360.com/</a></h5><p>如果您在这过程中有任何问题, 或者对产品有任何建议, 请扫描下方二维码进入官方群, 在群中的小哥哥小姐姐会帮助你解决问题,。 如果你对产品有任何意见, 我们会根据您的宝贵建议对产品进行整改, 持续更新, 满足您的需求。 (如图片显示不正常请添加 微信: 657678839)</p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/17/16dd88141292feb7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
-<p><img src="https://user-gold-cdn.xitu.io/2019/10/17/16dd881503c61357?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<p><img src="/2019/10/17/一个堪比畅言评论系统的第三方插件快评/qq.png" alt="qq"></p>
+<p><img src="/2019/10/17/一个堪比畅言评论系统的第三方插件快评/wechat.png" alt="wechat"></p>
 
         
       
